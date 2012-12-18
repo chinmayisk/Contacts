@@ -40,10 +40,10 @@ public class MyActivity extends Activity implements View.OnClickListener
             contacts.add(name + " " + phoneNumber);
         }
 
-        adapter=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,contacts);
+        adapter=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_multiple_choice,contacts);
+        listView.findViewById(android.R.id.list);
         listView.setAdapter(adapter);
-        listView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
-        listView.setSelector(R.drawable.listselector);
+        //listView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
 
         button.setOnClickListener(this);
         phones.close();

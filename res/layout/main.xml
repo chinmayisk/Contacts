@@ -17,18 +17,11 @@
             android:layout_alignParentBottom="true"
             android:text="@string/submit" />
 
-    <ListView android:id="@android:id/list" android:layout_width="fill_parent"
+    <ListView android:id="@android:id/list"
+              android:layout_width="fill_parent"
               android:layout_height="wrap_content"
-              android:layout_below="@+id/Tablayoutdesign"
-              android:layout_above="@id/testbutton"
-              android:cacheColorHint="#000000"
-              android:dividerHeight="1dip"
-              android:layout_marginTop="63dip"
-              android:layout_alignParentTop="true"
               android:layout_marginBottom="40dip"
               android:choiceMode="multipleChoice"
-              android:listSelector="@drawable/listselector"
-              android:drawSelectorOnTop="true"
             />
 </LinearLayout>
 
